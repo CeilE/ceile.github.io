@@ -1,0 +1,44 @@
+
+/* Colors---------------------*/
+$white: #fff;
+$blue-lighten: lighten(blue, 10%);
+$teal: teal;
+
+$color-primary: #40e0d0;
+$color-primary-light: lighten(#40e0d0, 10%);
+$color-secondary: darkslategrey;
+$color-accent: lightslategrey;
+
+
+$success: #3cb371;
+$error: indianred;
+$warning: #ff4500;
+$info: #ba55d3;
+
+
+$col-12: $color-primary;
+$col-6: $teal;
+$col-4: $color-primary-light;
+$col-3: $info;
+$col-5: $success;
+$col-7: $error;
+$col-8: $warning;
+
+$themes: (
+ 'col--3': $info,
+ 'col--4': $color-primary-light,
+ 'col--5': $success,
+ 'col--6': $teal,
+ 'col--7': $error,
+ 'col--8': $warning,
+ 'col--12': $color-primary
+);
+
+
+
+/* Breakpoints---------------------*/
+
+$breakpoints: (
+	'sm': 480px,
+	'lg': 1400px
+);

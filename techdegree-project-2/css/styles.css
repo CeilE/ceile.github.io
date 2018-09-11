@@ -1,0 +1,340 @@
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	color: lightslategrey;
+	font-size: 1.1em;
+	background: ghostwhite;
+	margin: 0 auto;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+h1,
+h2,
+h3{
+	margin: 0 auto;
+	font-weight: bold;
+	color: rgba(0,0,0, .8);
+}
+
+header{
+	color: rgba(0,0,0, .8);
+}
+
+header li{
+	list-style: none;
+}
+
+ul{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+a{
+	text-decoration: none;
+	color: rgba(0,0,0, .8);
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+img{
+	max-width: 90%;
+}
+
+/*=====================
+	Class Selectors
+=======================*/
+/*--------------Mockup Fixes-------------------*/
+
+.secondary-links{
+	text-transform: none;
+}
+
+/*=====================
+	Layout Styles
+=======================*/
+/*--------------Mobile Layouts-----------------*/
+
+h1{
+	padding-top: 18px;
+}
+
+.main-content{
+	margin: 0 auto;
+	width: 90%;
+	text-align: center;
+}
+
+.main-nav li{
+	margin: 2% 5%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: 100;
+}
+
+.home{
+	border: solid white 1px;
+	background-color: white;
+}
+
+.portfolio{
+	border: solid white 1px;
+	background-color: white;
+}
+
+.contact{
+	border: solid white 1px;
+	background-color: white;
+}
+
+.isolation{
+	text-align: center;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.secondary-content{
+	color: darkslategrey;
+	text-align: center;
+	border: solid white 1px;
+	background: white;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.subheading{
+	text-transform: uppercase;
+	padding-top: 12%;
+	padding-bottom: 12%;
+	margin: 0 auto;
+}
+
+h2{
+	padding-top: 5%;
+}
+
+.last-paragraph{
+	margin-bottom: 15%;
+}
+
+.contact-selector{
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+
+footer{ 
+	border-top: solid gainsboro 1px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+.foot-name{
+	display: inline-block;
+	/*text-align: center;*/
+}
+
+.second-footer{
+	display: none;
+}
+
+#contact{
+	text-transform: uppercase;
+}
+
+/*--------------Floated Columns-----------------*/
+
+.foot-nav{
+	float: right;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+/*--------------Link Designs-----------------*/
+
+a:hover{
+	color: teal;
+}
+
+a:focus{
+	color: firebrick;
+}
+
+
+/*=====================
+	Media Queries
+=======================*/
+
+@media (min-width: 768px){
+
+	.main-nav li{
+		float: left;
+		display: inline-block;
+		width: 33.2%;
+		text-align: center;
+		background: none;
+		border: none;
+		margin: 0 auto;
+	}
+
+	.main-content{
+		text-align: unset;
+	}
+
+	.profile-image{
+		float: right;
+		display: inline-block;
+	}
+
+	.first-paragraph{
+		float: left;
+		width: 40%;
+		display: inline-block;
+		margin: 0 auto;
+		padding: 0;
+		text-decoration-line: none;
+	}
+
+	.main-content{
+		padding-top: 30px;
+		padding-bottom: 35%;
+	}
+
+	.marketing,
+	.travel,
+	.photo{
+		float: left;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.search,
+	.map,
+	.calculator{
+		float: right;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.secondary-content{
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.paragraphs{
+		margin-bottom: 15%;
+	}
+
+	aside{
+		padding-bottom: 20px;
+		width: 70%;
+	}
+
+	.first-footer{
+		display: none;
+		margin: 0;
+	}
+
+/*	footer{
+		display: inline-block;
+		width: 90%
+	}*/
+
+	.second-footer{
+		display: inline-block;
+		width: 100%;
+	}
+
+	.foot-name{
+		float: left;
+		display: inline-block;
+	}
+
+	.footer-nav{
+		float: right;
+		margin: 0 auto;
+	}
+
+	.footer-nav li{
+		display: inline-block;
+		list-style: none;
+	}
+}
+
+@media (min-width: 1024px){
+
+	.main-header{
+		display: inline-block;
+		width: 100%;
+	}
+
+	.profile-image{
+		padding-right: 5%;
+	}
+
+	.first-paragraph{
+		padding-left: 5%;
+		width: 20%;
+	}
+
+	.main-title{
+		float: left;
+		margin: 0 auto;
+		margin-right: 38%;
+		margin-left: 5%;
+	}
+
+	.main-nav li{
+		width: 10%;
+	}
+
+	.main-content{
+		padding-bottom: 30%;
+		width: 100%;
+	}
+
+	.first-paragraph{
+		width: 54%;
+	}
+
+	.subheading{
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+
+	.marketing,
+	.search,
+	.travel{
+		float: left;
+		width: 33%;
+		padding-left: 10px;
+	}
+
+	.map,
+	.photo,
+	.calculator{
+		float: left;
+		width: 33%;
+		padding-left: 10px;
+	}
+
+	.secondary-content{
+		margin: 0 5%;
+	}
+
+	.contact-info{
+		width: 40%;
+	}
+}
+
+
+/*=====================
+	Clear Fixes
+=======================*/
+
+.clearfix:after{
+	clear: both;
+}

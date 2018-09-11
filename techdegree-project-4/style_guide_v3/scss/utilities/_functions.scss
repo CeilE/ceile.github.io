@@ -1,0 +1,15 @@
+
+@each $theme, $color in $themes{
+	.grid__#{$theme}.theme__colors {
+		@include button($bg-color: $color);
+		@include flex($dir: column, $just: space-around);
+		@include grid-gutters;
+		color: $color-secondary;
+		font-weight: bold;
+		@include mq('lg'){
+			@include widths($half: 100%);
+			@include gutters($ml: 10px);
+			align-items: center;
+		}
+	}
+}

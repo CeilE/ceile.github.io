@@ -1,0 +1,748 @@
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.4em;
+	font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+.container > * {
+  color: #fff;
+  /*text-shadow: 0 2px 0 rgba(110,133,156,0.12);*/
+  padding: 0.85em;
+  border: solid 1px rgba(110,133,156,0.15);
+}
+
+/*img{
+	max-width: 100%;
+}
+*/
+
+header{
+	background-color: firebrick;
+}
+
+nav{
+	background-color: maroon;
+}
+
+.main-content{
+	background-color: /*#f4f7f8*/;
+	color: darkslategrey;
+	max-width: 100%;
+}
+
+footer{
+	background-color: firebrick;
+}
+
+.main-content{
+	width: 470px;
+}
+
+.notif-bell{
+	position: relative;
+	transition: transform .1s cubic-bezier(0.6, 1.5, 0.6, 1);
+}
+
+.notif{
+	background: gold;
+	color: gold;
+	border-radius: 60%;
+    height: 19px;
+    position: absolute;
+	top: 0;
+ 	margin-left: 20px;
+    margin-top: 375px;
+    padding-bottom: 10px;
+}
+
+/*===================================
+	Header
+=====================================*/
+
+.title{
+	font-size: 3em;
+	margin-bottom: 15px;
+}
+
+.notif-bell:hover{
+	transform: rotate(45deg) scale(1.1);
+}
+
+.bell{
+	width: 30%;
+	transform: scale(1.1);
+}
+
+.main-header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.avatar-wrap{
+	display: flex;
+	/*width: 100%;*/
+	align-items: center;
+	/*justify-content: center;*/
+	flex-direction: column-reverse;
+}
+
+.avatar-icon{
+	border-radius: 50%;
+	order: 1;
+}
+
+.avatar-figure{
+	margin: 10px 15px;
+	display: flex;
+    flex-direction: column;
+}
+
+.avatar-name{
+	font-size: 2em;
+}
+
+
+/*===================================
+	Sidebar
+=====================================*/
+
+
+.dashboard,
+.members,
+.visits,
+.settings{
+	width: 50%;
+	height: 100px;
+}
+
+.sidebar{
+	display: flex;
+	padding-left: 55px;
+}
+
+
+/*===================================
+	Main Content
+=====================================*/
+
+.main-content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0;
+}
+
+.first-part{
+	border-bottom: solid 2px lightgray;
+	width: 100%;
+}
+
+input[type="search"]{
+  border-radius: 8px;
+  border: solid 2px lightgray;
+  height: 30px;
+  padding: 20px 30px 20px 10px;
+  margin-top: 10px;
+}
+
+.alert{
+	display: flex;
+	background: gold;
+	color: white;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 40px;
+	margin-top: 20px;
+	width: 95%;
+	border-radius: 7px;
+}
+
+.alert-message{
+	width: 70%;
+}
+
+.x{
+	color: azure;
+	font-size: 1.6em;
+}
+
+.traffic-title{
+	margin-top: 60px;
+}
+
+.traffic-title,
+.title2{
+	margin-left: 20px;
+}
+
+.button-time{
+  display: flex;
+  justify-content: space-between;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+li{
+  margin-left: 5px;
+}
+
+button{
+  border: none;
+  border-radius: 7px;
+  background: none;
+}
+
+.weekly{
+	background: gold;
+	border-radius: 9px;
+	padding: 2px 5px;
+}
+
+.chart{
+	margin: 25px auto;
+}
+
+/*button:focus{
+  background-color: goldenrod;
+  color: firebrick;
+  outline-style: none;
+}
+
+button:hover{
+  color: firebrick;
+}*/
+
+/*===================================
+	Second Part
+=====================================*/
+
+
+.second-part{
+	width: 100%;
+	border-bottom: solid 2px lightgray;
+}
+
+/*===================================
+	Third Part
+=====================================*/
+
+.third-part{
+  /*display: flex;*/
+  border-bottom: 2px solid lightgray;
+  /*flex-direction: column;*/
+}
+
+.twitter,
+.facebook,
+.google{
+  width: 50%;
+}
+
+h5{
+  margin-bottom: 5px;
+}
+
+.twitter-wrap,
+.facebook-wrap,
+.google-wrap{
+  border: 1px solid lightgray;
+  background: #f4f7f8;
+  display: flex;
+  align-items: center;
+  height: 150px;
+  justify-content: center;
+  margin: 40px 15px;
+  border-radius: 7px;
+  padding-left: 25px;
+  padding-right: 150px;
+}
+
+.tweet,
+.fb,
+.goog{
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  align-items: center;
+}
+
+.social-border{
+	display: flex;
+    justify-content: center;
+    border-radius: 90%;
+    background: steelblue;
+    height: 90px;
+    width: 90px;
+}
+
+.facebook{
+	margin-top: 10px;
+}
+
+/*===================================
+	Fourth Part
+=====================================*/
+
+.fourth-part{
+  /*display: flex;
+  justify-content: space-between;*/
+  border-bottom: solid 2px lightgray;
+  padding-left: 20px;
+}
+
+figure{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  margin: 15px 10px;
+  margin-bottom: 25px;
+}
+
+/*.img-wrap{
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+}*/
+
+figcaption{
+  margin-left: 10px;
+  font-weight: 200;
+}
+
+p{
+  font-weight: 200;
+}
+
+.image-1{
+  width: 59.63px;
+  border-radius: 50%;
+}
+
+.image-2,
+.image-3,
+.image-4{
+  width: 59.63px;
+  border-radius: 50%;
+}
+
+a{
+  text-decoration: none;
+}
+
+.arrow{
+  color: darkcyan;
+  font-size: 2em;
+}
+
+.figure-1,
+.figure-2,
+.figure-3{
+  border-bottom: solid 2px lightgray;
+}
+
+/*===================================
+	Fifth Part
+=====================================*/
+
+.message-input,
+#additions{
+  background: #f4f7f8;
+  margin-bottom: 13px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+#additions,
+select{
+  border: solid 1px lightgray;
+  border-radius: 8px;
+  width: 100%;
+}
+
+#additions{
+	height: 200px;
+}
+
+.message{
+	display: flex;
+    flex-direction: column;
+    max-height: 400px;
+}
+
+.send{
+	width: 100%;
+}
+
+.send,
+.save{
+  background: firebrick;
+  padding: 20px 40px;
+  color: white;
+  margin-left: 10px;
+}
+
+.send:hover{
+  color: lightslategrey;
+}
+
+.widget,
+.widget2{
+	background: firebrick;
+	color: white;
+	border-radius: 8px;
+	margin-right: 8px;
+}
+
+.on,
+.on2{
+	margin-right: 8px;
+}
+
+.off,
+.off2{
+	background: white;
+	border-radius: 33%;
+}
+
+select{
+    padding-left: 10px; 
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+}
+
+.save:hover{
+  color: lightslategrey;
+}
+
+.cancel{
+  background: lightgray;
+  padding: 20px 40px;
+  color: white;
+  margin-left: 10px;
+}
+
+.cancel:hover{
+  color: lightslategrey;
+}
+
+.settings-part{
+	margin-bottom: 40px;
+}
+
+.settings-button{
+  margin-top: 13px;
+}
+
+.controls{
+  display: flex;
+  justify-content: space-between;
+  margin: 13px;
+}
+
+/*===================================
+	Media Queries
+=====================================*/
+
+@media (min-width: 768px){
+
+	.main-content{
+		width: 100%;
+	}
+
+	.notif{
+	top: 0;
+ 	margin-left: 20px;
+    margin-top: 28px; 
+    padding-bottom: 10px;		
+	}
+
+/* Header-----------------------------------*/
+	
+	.main-header{
+  		flex-direction: row;
+  		justify-content: space-between;
+	}	
+
+	.title{
+		font-size: 1.4em;
+		margin-top: 0;
+	}
+
+	.bell{
+		width: 16%;
+		border-right: solid 1px white;
+		padding-right: 15px;
+	}
+
+	.avatar-wrap{
+		flex-direction: row;
+		width: 300px;
+  		align-items: center;
+	}
+
+	.avatar-figure{
+	  flex-direction: row;
+	}
+
+	.avatar-icon{
+		width: 43px;
+	}
+
+	.avatar-name{
+		font-size: 1.3em;
+	}
+
+/* Sidebar-----------------------------------*/
+
+	.sidebar{
+		padding-left: 0;
+		flex-direction: column;	
+	}
+
+	.dashboard,
+	.members,
+	.visits,
+	.settings{
+	  margin: 20px;
+	  height: 50px;
+	}	
+
+/* Main Content-----------------------------------*/	
+
+	.starter-content{
+	  display: flex;
+	  justify-content: space-between;
+	  width: 100%;
+	  align-items: center;
+	}	
+
+	.dashboard-title{
+	  margin: 0;
+	  height: unset;
+	  padding: 20px 40px 20px 20px;
+	}
+
+	.input-top{
+		background: #f4f7f8;
+		padding: 15px 20px 18px 800px;
+		border-bottom: solid 2px lightgray;
+		border-left: solid 2px lightgray;
+	}
+
+/* First part-----------------------------------*/
+
+	.traffic{
+		display: flex;
+  		justify-content: space-between;	
+  		align-items: center;	
+  		margin-top: 25px;
+	}
+
+	.traffic-title{
+		margin-top: 40px;
+		margin-left: 20px;
+	}	
+
+	.chart{
+		display: flex;
+	}
+
+/* Second part-----------------------------------*/	
+
+	.bar-chart,
+	.doughnut{
+		width: 610px;
+		display: flex;
+		margin: 20px auto;
+	}
+
+/* Third part-----------------------------------*/	
+
+	.third-part{
+	  display: flex;
+	  flex-direction: column;
+	}
+
+	.third-wrap{
+	  display: flex;
+	  align-self: center;
+	  padding-bottom: 20px;
+	}
+
+	.facebook-wrap{
+	  width: 55%;
+	}	
+
+	.social-pars{
+		margin: 0;
+		margin-bottom: 20px;
+	}	
+
+	h4{
+		margin-bottom: 0;
+	}
+
+/* Fourth part-----------------------------------*/	
+
+	.fourth-part{
+		width: 100%;
+	}
+
+	.img-wrap{
+	  display: flex;
+	  align-items: center;
+	  margin-bottom: 13px;
+	}
+
+/* Fifth part-----------------------------------*/	
+
+	.fifth-part{
+	  display: flex;
+	  width: 100%;
+	}	
+
+	.message-input,
+	#additions,
+	select{
+		margin: auto;
+		margin-bottom: 14px;
+	}
+
+	textarea{
+		align-items: center; 
+	}
+
+	.send{
+		margin-left: 0;
+	}
+
+	.settings-button{
+		text-align: center;
+	}
+
+	.message{
+		width: 50%;
+		border-right: solid 2px lightgray;
+		padding-right: 23px;
+		padding-left: 20px;
+	}
+
+	.settings-part{
+		padding-left: 23px;
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		margin-bottom: 20px;
+	}	
+}
+
+@media (min-width: 1020px){
+
+/* First part-----------------------------------*/
+
+	.chart{
+		width: 95%;
+	}
+
+/* Sidebar-----------------------------------*/	
+
+	.dashboard,
+	.members,
+	.visits,
+	.settings{
+		width: 80%;
+		padding-right: 10px;
+	}
+
+/* Second part-----------------------------------*/
+
+	.second-part{
+	  display: flex;
+	  justify-content: space-between;
+	}
+
+	.title2{
+		margin-left: 0;
+	}	
+
+	.chart2{
+	  display: block;
+	  border-right: solid 2px lightgray;
+	  padding-right: 20px;
+	}
+
+	.chart2,
+	.chart3{
+	  width: 50%;
+	  padding-left: 20px;
+	}		
+
+/* Third part-----------------------------------*/
+
+	.facebook-wrap{
+	  width: 33.4%;
+	}	
+
+	.third-part{
+		width: 100%;
+	}
+
+/* Fourth part-----------------------------------*/
+
+	.fourth-part{
+	  display: flex;
+	  justify-content: space-between;
+	  padding-left: 0;
+	}
+	
+	.new-members{
+	  border-right: solid 2px lightgray;
+	}
+
+	.new-members,
+	.recent{
+	  display: flex;
+	  flex-direction: column;
+	  width: 50%;
+	  margin-left: 20px;
+	}	
+
+	p{
+		margin: 0;
+	}
+
+	.image-1,
+	.image-2,
+	.image-3,
+	.image-4{
+	  width: 38.63px;
+	}	
+
+/* Fifth part-----------------------------------*/
+
+	.settings-widget{
+		width: 500px;
+	}
+
+	select{
+		padding: 8px 200px;
+		padding-left: 10px;
+	}
+
+	.controls{
+		margin-top: 50px;
+	}
+}

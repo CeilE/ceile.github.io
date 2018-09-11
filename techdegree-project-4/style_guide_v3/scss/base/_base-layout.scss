@@ -1,0 +1,30 @@
+/*===============================
+	Main-content
+=================================*/
+
+/* Opening paragraph----------------*/
+
+.card{
+	padding-bottom: 40px;
+}
+
+/* Base-Layout----------------*/
+
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	font-family: 'Nunito', sans-serif;
+	width: 90%;
+	margin: 0 auto;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+}
+
+p{
+	color: $color-accent;
+}

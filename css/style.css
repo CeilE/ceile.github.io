@@ -1,0 +1,419 @@
+
+*{
+	box-sizing: border-box;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.container{
+	margin-bottom: 10%;
+}
+
+img{
+	max-width: 100%;
+}
+
+/*===============================================
+	Styles Override
+=================================================*/
+/* NAVIGATION STYLES -------------------------------------------*/
+
+.logo{
+	font-weight: bold;
+}
+
+a.nav-item.nav-link{
+	color: white;
+}
+
+.navbar-light .navbar-nav .nav-link{
+	color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+	color: #007bff;
+}
+
+.navbar-light .navbar-nav .nav-link:focus{
+	color: goldenrod;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+	color: white;
+}
+
+.navbar-light .navbar-brand {
+   color: white;
+}
+
+.bg-light{
+	background: black!important;
+}
+
+.nav{
+	width: 100%!important;
+}
+
+.navbar-light .navbar-toggler {
+	background: #fff;
+	outline-style: none;
+}
+
+/* HEADER STYLES -------------------------------------------*/
+
+.main-header{
+	background: url('../images/codeBg4.png') center no-repeat;
+	background-size: cover;
+	display: block;
+}
+
+.header-wrapper{
+	display: block;
+	justify-content: space-around;
+	background: rgba(0,0,0, .5);
+}
+
+.intro-quote{
+	color: white;
+	background-color: rgba(0,0,0, .7);
+	padding: 14px;
+	border-radius: 4px;
+	order: 1;
+}
+
+.h1{
+	color: aliceblue;
+	font-size: 5rem;
+   text-decoration: underline;
+   padding: 28% 5% 15%;
+}
+
+/* INTRODUCTION STYLES -------------------------------------------*/
+
+.introduction{
+	text-align: center;
+}
+
+.intro-description{
+	margin-top: 40px;
+	color: gray;
+}
+
+.word1,
+.word2,
+.word3,
+.word4,
+.word5{
+	max-width: 100%;
+	border-radius: 10px;
+	max-height: 70px;
+}
+
+h2{
+	padding: 10px 0;
+	margin: 0;
+}
+
+.word1{
+	background: firebrick;
+}
+
+.word2{
+	background: chocolate;
+	color: white;
+}
+
+.word3{
+	background: orange;
+	color: darkslategrey;
+}
+
+.word4{
+	background: black;
+	color: skyblue;
+}
+
+.word5{
+	background: yellow;
+	color: black;
+}
+
+/* ABOUT STYLES -------------------------------------------*/
+
+.about-title{
+	margin: 10px;
+}
+
+.bio,
+.ethics{
+	margin-top: 40px;
+	background: #f4f7f8;
+}
+
+/* WORKS STYLES -------------------------------------------*/
+
+.set-1-works,
+.set-2-works{
+	text-align: center;
+}
+
+.thumbnails{
+	max-height: 200px!important;
+	transition: transform .3s cubic-bezier(0.6, 1.5, 0.6, 1);
+}
+
+.thumbnails:hover{
+	transform: scale(1.1);
+}
+
+.work-title{
+	background: black;
+	color: white;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.work-ps{
+	text-align: center;
+	margin-top: 15px;
+}
+
+.card-body{
+	margin-bottom: 50px;
+}
+
+.image-1,
+.image-2,
+.image-3,
+.image-4,
+.image-5,
+.image-6,
+.image-7{
+	border-bottom: 1px solid lightgray;
+   margin-bottom: 40px;
+}
+
+.projects{
+	color: goldenrod;
+	text-decoration: underline;
+}
+
+/* TREEHOUSE MESSAGE STYLES -------------------------------------------*/
+
+.tree-wrap{
+	text-align: center;
+}
+
+/* CONTACT STYLES -------------------------------------------*/
+
+.contact{
+	background: rgba(0,0,0,.84);
+	padding: 50px 0;
+}
+
+.contact-message{
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+.contacts{
+	display: flex;
+	justify-content: space-around;
+}
+
+.facebook,
+.twitter{
+  	background: rgb(3, 153, 255);
+  	display: flex;
+  	height: 65px;
+   width: 65px;
+  	justify-content: center;
+  	border-radius: 54%;
+}
+
+@keyframes animateFacebook{
+	0%{
+		transform: rotate(0deg);
+	}
+	30%{
+		transform: rotate(-45deg);
+	}
+	60%{
+		transform: rotate(25deg);
+	}
+}
+
+@keyframes animateTwitter{
+	0%{
+		transform: rotate(0deg);
+	}
+	60%{
+		transform: rotate(60deg);
+	}
+}
+
+.twitter{
+	align-items: center;
+	padding-top: 5px;
+}
+
+.facebook-icon,
+.twitter-icon{
+	height: 58px;
+   padding: 8px;
+}
+
+.facebook-icon:hover{
+	animation: animateFacebook .4s cubic-bezier(0.6, 1.5, 0.6, 1);
+}
+
+.github-icon:hover{
+	transform: rotate(360deg);
+}
+
+.twitter-icon:hover{
+	animation: animateTwitter .4s cubic-bezier(0.6, 1.5, 0.6, 1);
+}
+
+.github-icon{
+	height: 65px;
+	transition: transform 1s cubic-bezier(0.6, 1.5, 0.6, 1);
+}
+
+.offer{
+	max-width: 400px;
+	margin: auto;
+}
+
+/* FOOTER STYLES -------------------------------------------*/
+.footer{
+	background: black;
+}
+
+
+/*===============================================
+	Media Queries
+=================================================*/
+
+@media(min-width: 360px){
+	.h1{
+		font-size: 6rem;
+	}
+}
+
+@media(min-width: 400px){
+	.h1{
+		font-size: 6.7rem;
+	}
+}
+
+@media (min-width: 576px){
+	.jumbotron{
+		padding: 20px;
+	}
+}
+
+@media (min-width: 768px){
+
+	/* HEADER STYLES -------------------------------------------*/
+	.header-wrapper{
+		padding: 5rem;
+	}
+
+	.h1{
+		background: none;
+		padding: 0;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	
+	/* WORKS STYLES -------------------------------------------*/
+	.set-1-works,
+	.set-2-works{
+		display: grid;
+	}
+
+	.set-1-works{
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-gap: 10px;
+	}
+
+	.set-2-works{
+		 grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.thumbnails{
+		max-height: 170px!important;
+    	max-width: 200px;
+	}
+
+	.card-body{
+		max-width: 200px;
+	}
+
+	.image-1,
+	.image-2,
+	.image-3,
+	.image-4,
+	.image-5,
+	.image-6,
+	.image-7{
+		border-bottom: none;
+   	margin-bottom: 0;
+	}
+	
+	/* TREEHOUSE MESSAGE STYLES -------------------------------------------*/
+	
+	.tree-wrap{
+		align-items: center;
+	}
+
+	.message-thanks{
+		flex: 1;
+	}
+
+	/* CONTACT STYLES -------------------------------------------*/
+	.figure{
+		margin-left: 14px;
+	}
+
+	.contacts{
+		justify-content: center;
+	}
+}
+
+@media (min-width: 990px){
+	.bio,
+	.ethics{
+		width: 50%;
+	}
+}
+
+@media(min-width: 1024px){
+
+	.navbar-light .navbar-nav .nav-link.active{
+	color: white;
+	background: rgba(184,134,11, .4);
+	border-bottom: 5px solid rgba(184,134,11,.4);
+	border-radius: 2px;
+	}
+
+	/* HEADER STYLES -------------------------------------------*/
+	.h1{
+		text-align: unset;
+		margin-right: 80px;
+		font-size: 9rem;
+	}
+
+	.header-wrapper{
+		align-items: center;
+	}
+
+	/* WORKS STYLES -------------------------------------------*/
+	.thumbnails{
+		max-height: 200px!important;
+    	max-width: 200px;
+	}
+}

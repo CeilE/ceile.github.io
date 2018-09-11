@@ -1,0 +1,29 @@
+/* Form Elements----------------*/
+
+.form{
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.form .headline--secondary{
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.form__label--hidden{
+	display: block;
+	display: none;
+}
+
+.form__input{
+	margin: 15px auto;
+	width: 100%;
+	border: none;
+	outline: 0;
+	border-bottom: solid 6px $color-primary;
+}
+
+.btn--default{
+	@include button($color: white, $font: 1em, $tt: uppercase, $w:100%);
+	background-color: $color-primary;
+}

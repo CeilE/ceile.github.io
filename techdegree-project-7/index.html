@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title>Your app</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+	</head>
+
+	<body>
+		<div class="grid">
+			<header class="main-header">
+				<h2 class="title">Your App</h2>
+				<div class="header-half">
+					<img src="icons/icon-bell.svg" alt="Bell" class="bell">
+					<img src="images/avatar.jpg" alt="Dan Lok" class="avatar">
+					<span class="avatar-name">Dan Lok</span>
+				</div>
+			</header>
+
+			<nav class="sidebar">
+				<img src="icons/icon-dashboard.svg" alt="Dashboard">
+				<img src="icons/icon-members.svg" alt="Members">
+				<img src="icons/icon-visits.svg" alt="Visits">
+				<img src="icons/icon-settings.svg" alt="Settings">
+			</nav>
+
+<!-- 			<div class="input">
+				<input type="text" id="search" name="user_search" placeholder="Search">
+			</div>
+ -->
+			<div class="container">
+				<input type="text" id="search" name="user_search" placeholder="Search">
+
+				<h2 class="dashboard">Dashboard</h2>
+
+				<!-- JavaScript -->
+			<!-- 	<p class="alert">Alert! This dashboard is not real, don't get overwhelmed.</p> -->
+				<!-- /JavaScript -->
+
+				<h3 class="traffic">Traffic</h3>
+				<div class="time">
+					<button>Hour</button>
+					<button>Daily</button>
+					<button>Weekly</button>
+					<button>Monthly</button>		
+				</div>		
+				[Traffic goes here...]
+					</canvas><canvas id="myChart"></canvas>
+					<script>
+						const ctx= document.getElementById('myChart').getContext('2d');
+
+						let myChart = new Chart(ctx, {
+							type: 'line',
+							data: {
+								labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'],
+								datasets: [{
+									label: 'apples',
+									data: [12,19,3,17,6,3,7],
+									backgroundColor: "rgba(153,255,51,0.4)"
+								},
+								{
+									label: 'oranges',
+									data: [2,29,5,5,2,3,10],
+									backgroundColor: "rgba(255,153,0,0.4)"
+								}]
+							}
+						});
+					</script>
+				<h3>Daily Traffic</h3>
+				[Bar graph goes here...]
+
+				<h3>Mobile Users</h3>
+				[Donut goes here...]
+
+				<h3>Social Stats</h3>
+				<div class="social-stats">
+					<div class="twitter-span">
+						<img src="icons/icon-twitter.svg" class="twitter">
+						<div class="twitter-par">
+							<h3>Twitter</h3>
+							<p>10,345</p>
+						</div>
+					</div>
+					<div class="facebook-span">
+					<img src="icons/icon-facebook.svg" class="facebook">
+						<div class="facebook-par">
+							<h3>Facebook</h3>
+							<p>8,739</p>
+						</div>	
+					</div>
+					<div class="facebook-span">
+					<img src="icons/icon-google-plus.svg" class="google">
+						<div class="google-par">
+							<h3>Google</h3>
+							<p>2,530</p>
+						</div>	
+					</div>
+				</div>
+
+				<div class="members">
+					<div class="new-members">
+						<h3>New Members</h3>
+						<img src="images/member-1.jpg">
+						<span>Victoria Chambers</span>
+
+						<img src="images/member-2.jpg">
+						<span>Dale Byrd</span>
+
+						<img src="images/member-3.jpg">
+						<span>Dawn Wood</span>
+
+						<img src="images/member-4.jpg">
+						<span>Dan Oliver</span>
+					</div>
+
+					<div class="member-activity">
+						<h3>Recent Activity</h3>
+						<img src="images/member-1.jpg">
+						<span>Victoria Chambers</span>
+
+						<img src="images/member-2.jpg">
+						<span>Dale Byrd</span>
+
+						<img src="images/member-3.jpg">
+						<span>Dawn Wood</span>
+
+						<img src="images/member-4.jpg">
+						<span>Dan Oliver</span>					
+					</div>
+				</div>
+
+				<div class="last-part">
+					<div class="message">
+						<h3>Message User</h3>
+						<input class="searchUser" type="text" id="search-2" placeholder="Search for User">
+						<textarea id="additions" name="user_additions" placeholder="Message for User"></textarea>
+						<button class="send">Send</button>
+					</div>
+
+
+					</div>
+
+					<div class="settings">
+						<h3>Settings</h3>
+						<span>Send Email Notifications</span>
+						[Settings widget goes here...]
+						<span>Set Profile to Public</span>
+						[Settings widget goes here...]
+
+						<select>
+							<optgroup>
+								<option value="">Select Timezone</option>
+								<option value="utc8">UTC+8</option>
+								<option value="central-time">Central Time</option>
+								<option value="utc9">UTC-13</option>
+							</optgroup>
+						</select>
+
+						<button class="save">Save</button>
+						<button class="cancel">Cancel</button>
+					</div> 
+				</div>
+				<!-- end of last part -->
+			</div>
+			<!-- end of container -->
+		</div>
+		<!-- end of grid -->
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Work Sans', sans-serif;
+	margin: 0 auto;
+}
+
+img{
+	max-width: 100%;
+}
+
+h2{
+	margin-top: 0;
+}
+
+p{
+	margin: 0 auto;
+}
+
+/* HEADER ------------------------------*/
+
+header{
+	background-color: purple;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+}
+
+.title{
+	display: inline;
+	padding: 5px 0 0 15px;
+}
+
+.bell{
+	width: 20%;
+	border-right: 2px solid white;
+	height: 50px;
+	padding-right: 8px;
+}
+
+.avatar{
+	width: 24%;
+	border-radius: 50%;
+	padding-left: 5px;
+}
+
+.header-half{
+	text-align: right;
+	padding: 10px 15px 0 0;
+}
+
+/* Sidebar----------------------------*/
+
+.sidebar img{
+	width: 20%;
+}
+
+nav{
+	background-color: darkslategrey;
+	display: block;
+}
+
+/* Main-content-----------------------*/
+
+.container{
+	margin-top: 40px;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input[type="text"]{
+	padding: 10px 30px;
+	background-color: rgba(255,255,255, .8);
+	border: none;
+	border-radius: 7px;
+	outline: 0;
+	width: 100%;
+}
+
+.input{
+	background: #f4f7f8;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.dashboard{
+	margin-top: 10px;
+}
+
+.traffic{
+	margin-bottom: 15px;
+}
+
+.time{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 15px;
+}
+
+button{
+	border: none;
+	background: none;
+	outline-style: none;
+}
+
+.twitter,
+.facebook,
+.google{
+/*	border: 2px solid gray;
+	border-radius: 50%;*/
+	background: steelblue;
+	width: 30%;
+}
+
+/*.twitter-span,
+.facebook-span,
+.google-span{
+	background: #f4f7f8;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 8px;
+	border: 2px solid gray;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+.fuck{
+	display: flex;
+	flex-direction: column;
+}*/
+
+/*.alert{
+	background-color: purple;
+	color: white;
+	border-radius: 7px;
+	paddin: 0 5px;
+	width: 100%;
+}*/
+
+
+.grid{
+	display: grid;
+	/*grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));*/
+	grid-template-areas: 
+	'header header header'
+	;
+}
+
+.header{
+	grid-area: header;
+}
+
+.sidebar{
+	grid-area: sidebar;
+}
+
+.container{
+	grid-area: container;
+}

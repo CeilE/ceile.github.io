@@ -1,0 +1,32 @@
+/* Headline----------------*/
+
+.container{
+	background: none;
+}
+
+.headline--secondary{
+	color: $color-accent;
+	@include mq('lg'){
+		@include gutters($mt: 40px);
+	}
+}
+
+.headline--primary{
+	/*font-size: 1.6em;*/
+	color: $color-primary-light;
+	margin-left: 15px;
+}
+
+.link{
+	color: $color-primary;
+}
+
+.blockquote{
+	border-left: solid 8px $color-primary;
+	padding-left: 15px;
+	border-radius: 8px;
+	font-size: 1.4em;
+	font-style: italic;
+	color: $color-accent;
+	margin-bottom: 50px;
+}

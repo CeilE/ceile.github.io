@@ -1,0 +1,31 @@
+/* Navigation----------------*/
+
+.navigation{
+	padding-top: 40px;
+	text-align: center;
+}
+
+.nav{
+	text-align: center;
+	font-size: 1.1em;
+	color: $color-secondary;
+	margin-bottom: 60px;
+	margin-top: 30px;
+	@include mq('lg'){
+		@include flex;
+	}
+}
+
+.nav__item{
+	margin-bottom: 10px;
+	padding: 5px;
+	@include mq('lg'){
+		@include gutters($mr: 50px);
+	}
+}
+
+.nav__item:first-child{
+	background-color: $color-primary;
+	border-radius: 5px;
+	color: white;
+}

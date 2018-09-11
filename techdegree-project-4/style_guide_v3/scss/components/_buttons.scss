@@ -1,0 +1,45 @@
+/* Buttons----------------*/
+
+.grid__col--12:first-child{
+	margin-top: 50px;
+}
+
+.btn--default.theme__colors,
+.btn--success.theme__colors,
+.btn--error.theme__colors,
+.btn--warning.theme__colors,
+.btn--info.theme__colors{
+	@include button;
+	margin: 10px auto;
+	@include mq('lg'){
+		@include widths($half: 80%);
+		@include gutters($m: 0 10px);
+	}
+}
+
+.btn--success,
+.btn--error,
+.btn--warning,
+.btn--info{
+	@include button($color: $white, $tt: uppercase, $w:100%);
+}
+
+.btn--default{
+	@include button($bg-color: $color-primary-light, $w:100%);
+}
+
+.btn--success{
+	@include button($bg-color: $success, $w:100%);
+}
+
+.btn--error{
+	@include button($bg-color: $error, $w:100%);
+}
+
+.btn--warning{
+	@include button($bg-color: $warning, $w:100%);
+}
+
+.btn--info{
+	@include button($bg-color: $info, $w:100%);
+}

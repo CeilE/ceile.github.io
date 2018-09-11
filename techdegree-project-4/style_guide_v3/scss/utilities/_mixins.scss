@@ -1,0 +1,101 @@
+
+
+/* Balance Mixins --------------------*/
+
+@mixin gutters(
+	$m: null,
+	$ml: null,
+	$mr: null,
+	$mt: null,
+	$mb: null
+){
+	margin: $m;
+	margin-left: $ml;
+	margin-right: $mr;
+	margin-top: $mt;
+	margin-bottom: $mb;
+}
+
+@mixin widths(
+	$half: null
+){
+	width: $half;
+}
+
+
+/* Color Mixins --------------------*/
+@mixin theme(
+$success: null,
+$error: null,
+$warning: null,
+$info: null,
+){
+	@content;
+}
+
+@mixin bg($bg-color: null){
+	@content;
+}
+
+/* Nav and Grid Mixins --------------------*/
+
+@mixin flex(
+	$disp: flex,
+	$dir: null,
+	$wrap: null,
+	$items: null,
+	$just: null
+){
+	display: $disp;
+	flex-direction: $dir;
+	flex-wrap: $wrap;
+	align-items: $items;
+	justify-content: $just;
+	@content;
+}
+
+@mixin grid-gutters{
+	margin: 5px auto;
+}
+
+/* Components Mixins --------------------*/
+
+
+@mixin button(
+	$w: null,
+	$border: none,
+	$br: 5px,
+	$bg-color: null,
+	$color: null,
+	$font: null,
+	$padd: 10px 0,
+	$tt: null,
+){ 
+	width: $w;
+	border: $border;
+	border-radius: $br;
+	background-color: $bg-color;
+	color: $color;
+	font-size: $font;
+	padding: $padd;
+	text-transform: $tt;
+	@content;
+}
+
+/* Media Query Mixins --------------------*/
+
+@mixin mq($break){
+	$value: map-get($breakpoints, $break);
+	$sm: map-get($breakpoints, 'sm');
+
+	@if $value <= $sm {
+		@media (min-width: $value){
+			@content;
+		}
+	}
+	@else {
+		@media (min-width: $value){
+			@content;
+		}
+	}
+}

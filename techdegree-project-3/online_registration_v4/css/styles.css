@@ -1,0 +1,191 @@
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Merriweather', sans-serif;
+	color: lightslategrey;
+	margin: 0;
+}
+
+h1{
+	margin: 0;
+}
+
+h2{
+	color: darkslategrey;
+}
+
+legend{
+	color: rgba(0,0,0, .8);
+	font-weight: bold;
+	margin: 0;
+}
+
+footer{
+	text-align: center;
+}
+
+/*===============================
+		Base Layout Style
+=================================*/
+/* Header------------------------------------------*/
+
+header{
+	color: white;
+	background-color: darkslategrey;
+	text-align: center;
+	width: 100%;
+}
+
+.title{
+	padding: 20px;
+}
+
+/* Body Layout------------------------------------------*/
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.main-content{
+	text-align: center;
+	border-bottom: solid darkslategrey 4px;
+}
+
+form{
+	margin: 5px auto;
+}
+
+legend{
+	border-top: solid darkslategrey 2px;
+	width: 100%;
+	padding-top: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="select"],
+textarea,
+select{
+	margin: 5px 3px 5px 0;
+	padding: 19px 80px 19px 10px;
+	background: #f4f7f8;
+	border: none;
+	border-radius: 8px;
+	outline: 0;
+	box-shadow: 0 0 1px 1px #f4f7f8;
+	width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+	margin-bottom: 15px;
+}
+
+input.zip-code{
+	width: 50%;
+	margin-bottom: 30px;
+}
+
+label{
+	display: block;
+	margin: 20px 0 10px 10px;
+}
+
+label.buttons{
+	display: inline;
+}
+
+fieldset{
+	border: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.textarea-paragraph{
+	margin-left: 10px;
+}
+
+button{
+	color: white;
+	background: teal;
+	padding: 10px 80px;
+	width: 100%;
+	font-size: 2em;
+	border: none;
+	border-radius: 7px;
+	text-align: center;
+}
+
+textarea,
+button{
+	margin-bottom: 5px;
+}
+
+/* Pseudo Elements------------------------------------------*/
+
+input:focus,
+textarea:focus,
+button:focus,
+select:focus{
+	border: solid teal 2px;
+	background: darkslategrey;
+	color: white;
+	transition: all 1s ease-out;
+}
+
+input#name:valid,
+input#mail:valid{
+	border-color: green;
+	background: #f4f7f8;
+	color: black;
+}
+
+::placeholder{
+	text-align: right;
+	font-style: italic;
+	padding-right: 10px;
+}
+
+/*===============================
+		   Media Query
+=================================*/
+
+@media (min-width: 768px){
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="select"],
+	select{
+		width: 80%;
+	}
+
+	.container-1,
+	.container-2,
+	.container-3,
+	.container-4,
+	.container-5,
+	.container-6,
+	.container-7,
+	label{
+		display: flex;
+		flex: 1;
+		margin-bottom: 10px;
+	}
+
+	input.zip-code{
+		width: 20%;
+		margin-right: 60.3%;
+	}
+}
+
+
+
+
+
+

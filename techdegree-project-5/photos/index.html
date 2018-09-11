@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title>An Interactive Photo Gallery</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="lightboxPlugin/css/lightbox.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+
+	<body>
+
+
+		<div class="list">
+
+				<input type="text" id="filterInput" placeholder="Search 12 photos" data-list=".list">
+				<ul id="names" class="collection with-header">
+					<div class="set1">
+						<li class="collection-item">
+							<a href="images/01.jpg" data-lightbox="images" data-title="Hay Bales
+							I love hay bales. Took this snap on a drive through the countryside past some straw fields." class="mountain">
+							<img src="thumbnails/01.jpg" alt="straw fields"><span>Terrain Hay Bales
+							I love hay bales. Took this snap on a drive through the countryside past some straw fields.</span>
+							</a>
+						</li>
+
+						<li class="collection-item">
+							<a href="images/02.jpg" data-lightbox="images" data-title="Lake
+						The lake was so calm today. We had a great view of the snow on the mountains from here.">
+							<img src="thumbnails/02.jpg" alt="straw fields"><span>Mountain Lake
+						The lake was so calm today. We had a great view of the snow on the mountains from here.</span>
+							</a>
+						</li>
+
+						<li class="collection-item">
+							<a href="images/03.jpg" data-lightbox="images" data-title="Canyon
+					I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+								<img src="thumbnails/03.jpg" alt="straw fields"><span>Terrain Canyon
+					I hiked to the top of the mountain and got this picture of the canyon and trees below.</span>
+							</a>
+						</li>
+
+						<li class="collection-item">
+							<a href="images/04.jpg" data-lightbox="images" data-title="Iceberg
+					It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+								<img src="thumbnails/04.jpg" alt="straw fields"><span>Mountain Lake Iceberg
+					It was amazing to see an iceberg up close, it was so cold but didn’t snow today.</span>
+							</a>
+						</li>
+					</div>
+		<!-- 		</ul> -->
+			<!-- </div> -->
+
+
+			<div class="set2">
+				<!-- <ul> -->
+					<li class="collection-item">
+						<a href="images/05.jpg" data-lightbox="images" data-title="Desert
+				The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+							<img src="thumbnails/05.jpg" alt="straw fields"><span>Terrain Desert
+				The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.</span>
+						</a>
+					</li>
+
+					<li class="collection-item">
+						<a href="images/06.jpg" data-lightbox="images" data-title="Fall
+				Fall is coming, I love when the leaves on the trees start to change color.">
+							<img src="thumbnails/06.jpg" alt="straw fields"><span>Terrain Fall
+				Fall is coming, I love when the leaves on the trees start to change color. </span>
+						</a>
+					</li>
+
+					<li class="collection-item">
+						<a href="images/07.jpg" data-lightbox="images" data-title="Plantation
+				I drove past this plantation yesterday, everything is so green!">
+							<img src="thumbnails/07.jpg" alt="straw fields"><span>Terrain Plantation
+				I drove past this plantation yesterday, everything is so green!</span>
+						</a>
+					</li>
+
+					<li class="collection-item">
+						<a href="images/08.jpg" data-lightbox="images" data-title="Dunes
+				My summer vacation to the Oregon Coast. I love the sandy dunes!">
+							<img src="thumbnails/08.jpg" alt="straw fields"><span>Terrain Dunes
+				My summer vacation to the Oregon Coast. I love the sandy dunes!</span>
+						</a>
+					</li>
+				<!-- </ul> -->
+			</div>
+
+			<div class="set3">
+			<!-- 	<ul> -->
+					<li class="collection-item">
+						<a href="images/09.jpg" data-lightbox="images" data-title="Countryside Lane
+				We enjoyed a quiet stroll down this countryside lane.">
+							<img src="thumbnails/09.jpg" alt="straw fields"><span>Terrain Countryside Lane
+				We enjoyed a quiet stroll down this countryside lane.</span>
+						</a>
+					</li>
+
+					<li class="collection-item">
+						<a href="images/10.jpg" data-lightbox="images" data-title="Sunset
+				Sunset at the coast! The sky turned a lovely shade of orange.">
+							<img src="thumbnails/10.jpg" alt="straw fields"><span>Lake Sunset
+				Sunset at the coast! The sky turned a lovely shade of orange</span>
+						</a>
+					</li>
+
+					<li class="collection-item">
+						<a href="images/11.jpg" data-lightbox="images" data-title="Cave
+				I did a tour of a cave today and the view of the landscape below was breathtaking.">
+							<img src="thumbnails/11.jpg" alt="straw fields"><span>Terrain Cave
+				I did a tour of a cave today and the view of the landscape below was breathtaking.</span>
+						</a>
+					</li>
+
+					<li class="collection-item">
+						<a href="images/12.jpg" data-lightbox="images" data-title="Bluebells
+				I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+							<img src="thumbnails/12.jpg" alt="straw fields"><span>Mountain Terrain Bluebells
+				I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.</span>
+						</a>	
+					</li>
+				</ul>
+				<!-- </ul> -->
+			</div>
+		</div>
+
+		<script src="lightboxPlugin/js/lightbox-plus-jquery.min.js"></script>
+		<script src="js/search.js"></script>
+		<script>
+			lightbox.option({
+				'alwaysShowNavOnTouchDevices': true,
+				'fitImagesInViewport': true,
+				'imageFadeDuration': 100,
+				'wrapAround': true
+			})
+		</script>
+	</body>
+</html>

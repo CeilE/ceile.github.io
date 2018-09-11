@@ -1,0 +1,62 @@
+/* Grid---------------------*/
+
+.grid__col--6.theme__colors,
+.grid__col--3.theme__colors{
+	text-align: unset;
+		@include mq('lg'){
+		@include widths($half: 80%);
+	}
+}
+
+.grid__row{
+	margin: 40px auto;
+	@include mq('lg'){
+		@include flex($just: space-between);
+		@include gutters($m: 20px auto);
+	}
+}
+
+.grid__col--3{
+	@include mq('lg'){
+		@include gutters($ml: 15px);
+	}
+}
+
+.grid__col--8{
+	@include mq('lg'){
+		@include widths($half: 65%);
+	}	
+}
+
+.grid__col--4{
+	@include mq('lg'){
+		@include widths($half: 30%);
+	}
+}
+
+.grid__col--12{
+		@include mq('lg'){
+		@include flex;
+		@include widths($half: 100%);
+	}
+}
+
+.grid__col--5.theme__colors,
+.grid__col--4.theme__colors{
+	@include mq('lg'){
+		flex: 1;
+	}
+}
+
+.grid__col--7.theme__colors,
+.grid__col--8.theme__colors{
+	@include mq('lg'){
+		flex: 2;
+	}	
+}
+
+.grid__col--7.centered{
+	@include mq('lg'){
+		@include gutters($ml: 20%, $mr: 20%);
+	}
+}
