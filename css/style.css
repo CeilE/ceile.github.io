@@ -105,7 +105,8 @@ a.nav-item.nav-link{
 .word2,
 .word3,
 .word4,
-.word5{
+.word5,
+.word6{
 	max-width: 100%;
 	border-radius: 10px;
 	max-height: 70px;
@@ -139,6 +140,11 @@ h2{
 .word5{
 	background: yellow;
 	color: black;
+}
+
+.word6{
+	background: purple;
+	color: white;
 }
 
 /* ABOUT STYLES -------------------------------------------*/
